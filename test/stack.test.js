@@ -14,7 +14,10 @@ class Stack {
     }
 
     pop() {
-        this.items[this.top] = undefined;
+        // this.items[this.top] = undefined;
+        // delete operator removes the value of the property
+        // and the property itself
+        delete this.items[this.top];
         this.top -= 1;
     }
 }
